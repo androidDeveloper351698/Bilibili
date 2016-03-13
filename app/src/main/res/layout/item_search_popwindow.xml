@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+<ImageView
+    android:id="@+id/pop_back"
+    android:layout_marginLeft="10dp"
+    android:src="@drawable/ic_arrow_back_black"
+    android:layout_gravity="center"
+    android:layout_width="24dp"
+    android:layout_height="24dp" />
+    <ImageView
+        android:id="@+id/pop_scan"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_scan"
+        android:layout_gravity="center"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+    <EditText
+        android:id="@+id/pop_input"
+        android:hint="搜索视频、番剧、up主或av号"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:background="@color/white"
+        android:textSize="14sp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/pop_clear"
+        android:src="@drawable/ic_close_black"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:layout_width="16dp"
+        android:layout_height="16dp" />
+    <ImageView
+        android:id="@+id/pop_search"
+        android:src="@drawable/ic_search_query"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:layout_width="32dp"
+        android:layout_height="32dp" />
+</LinearLayout>

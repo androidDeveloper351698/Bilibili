@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_height="wrap_content">
+    <com.kaede.bilibilikaede.View.VideoCardView
+        android:id="@+id/card1_item_group"
+        android:layout_marginLeft="5dp"
+        android:elevation="2dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="170dp">
+    </com.kaede.bilibilikaede.View.VideoCardView>
+
+    <com.kaede.bilibilikaede.View.VideoCardView
+        android:id="@+id/card2_item_group"
+        android:layout_marginLeft="5dp"
+        android:elevation="2dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="170dp">
+    </com.kaede.bilibilikaede.View.VideoCardView>
+</LinearLayout>

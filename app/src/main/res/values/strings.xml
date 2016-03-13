@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">bilibilikaede</string>
+    <string name="nav_home">首页</string>
+    <string name="nav_dl">离线管理</string>
+    <string name="nav_fav">我的收藏</string>
+    <string name="nav_his">历史记录</string>
+    <string name="nav_follow">关注的人</string>
+    <string name="nav_cost">消费记录</string>
+    <string name="nav_theme">主题选择</string>
+    <string name="nav_settings">设置与帮助</string>
+
+    <!-- 主页tab标题 -->
+    <array name="home_tab_title">
+        <item>直播</item>
+        <item>番剧</item>
+        <item>推荐</item>
+        <item>分区</item>
+        <item>关注</item>
+        <item>发现</item>
+    </array>
+
+    <!-- 番剧tab标题 -->
+    <array name="fan_ju_tab_title">
+        <item>推荐</item>
+        <item>连载动画</item>
+        <item>完结动画</item>
+        <item>国产动画</item>
+        <item>资讯</item>
+        <item>官方延伸</item>
+    </array>
+
+    <!-- 番剧导航标签 -->
+    <array name="fan_ju_nav">
+        <item>连载动画</item>
+        <item>完结动画</item>
+        <item>国产动画</item>
+        <item>资讯</item>
+        <item>官方延伸</item>
+    </array>
+
+    <!-- PlayVideoActivity菜单选项 -->
+    <string name="play_video_full">全屏</string>
+    <string name="play_video_setting">设置</string>
+    <string name="play_video_about">关于</string>
+    <string name="play_video_danma">弹幕</string>
+
+    <!-- HomeFragment菜单选项 -->
+    <string name="search_video">搜索</string>
+
+    <!-- VideoCardView的默认属性 -->
+    <string name="vcv_title">读取中...</string>
+    <string name="vcv_play_count">0</string>
+    <string name="vcv_comment_count">0</string>
+
+    <!-- VideoView相关 -->
+    <string name="N_A">N/A</string>
+    <string name="close">Close</string>
+    <string name="exit">Exit</string>
+    <string name="sample">Sample</string>
+    <string name="recent">Recent</string>
+    <string name="settings">Settings</string>
+    <string name="tracks">Tracks</string>
+    <string name="toggle_player">Player</string>
+    <string name="toggle_render">Render</string>
+    <string name="toggle_ratio">Scale</string>
+    <string name="show_info">Info</string>
+    <string name="fps_output">fps (output)</string>
+    <string name="fps_decode">fps (decode)</string>
+
+    <string name="media_information">Media Information</string>
+    <string name="mi_player">Player</string>
+    <string name="mi_media">Media</string>
+    <string name="mi_profile_level">Profile level</string>
+    <string name="mi_pixel_format">Pixel format</string>
+    <string name="mi_resolution">Resolution</string>
+    <string name="mi_length">Length</string>
+    <string name="mi_stream_fmt1">Stream #%d</string>
+    <string name="mi_type">Type</string>
+    <string name="mi_codec">Codec</string>
+    <string name="mi_frame_rate">Frame rate</string>
+    <string name="mi_bit_rate">Bit rate</string>
+    <string name="mi_sample_rate">Sample rate</string>
+    <string name="mi_channels">Channels</string>
+    <string name="mi__selected_video_track">*</string>
+    <string name="mi__selected_audio_track">*</string>
+
+    <string name="TrackType_video">Video</string>
+    <string name="TrackType_audio">Audio</string>
+    <string name="TrackType_subtitle">Subtitle</string>
+    <string name="TrackType_timedtext">Timed text</string>
+    <string name="TrackType_metadata">Meta data</string>
+    <string name="TrackType_unknown">Unknown</string>
+
+    <string name="VideoView_error_text_invalid_progressive_playback">Invalid progressive playback</string>
+    <string name="VideoView_error_text_unknown">Unknown</string>
+    <string name="VideoView_error_button">OK</string>
+
+    <string name="VideoView_ar_aspect_fit_parent">Aspect / Fit parent</string>
+    <string name="VideoView_ar_aspect_fill_parent">Aspect / Fill parent</string>
+    <string name="VideoView_ar_aspect_wrap_content">Aspect / Wrap content</string>
+    <string name="VideoView_ar_match_parent">Free / Fill parent</string>
+    <string name="VideoView_ar_16_9_fit_parent">16:9 / Fit parent</string>
+    <string name="VideoView_ar_4_3_fit_parent">4:3 / Fit parent</string>
+
+    <string name="VideoView_render_none">Render: None</string>
+    <string name="VideoView_render_surface_view">Render: SurfaceView</string>
+    <string name="VideoView_render_texture_view">Render: TextureView</string>
+
+    <string name="VideoView_player_none">Player: None</string>
+    <string name="VideoView_player_AndroidMediaPlayer">Player: AndroidMediaPlayer</string>
+    <string name="VideoView_player_IjkMediaPlayer">Player: IjkMediaPlayer</string>
+    <string name="VideoView_player_IjkExoMediaPlayer">Player: IjkExoMediaPlayer</string>
+</resources>

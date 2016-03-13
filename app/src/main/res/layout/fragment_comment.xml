@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recycler_comment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginBottom="230.5dp"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_emoji"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+        <EditText
+            android:id="@+id/et_comment_content"
+            android:textSize="16sp"
+            android:hint="说点什么"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@drawable/ic_send_grey"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+    </LinearLayout>
+</FrameLayout>

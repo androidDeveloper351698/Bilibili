@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_avatar"
+        android:src="@drawable/bili_default_avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+    <ImageView
+        android:id="@+id/user_level"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_lv2"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/user_nickname"
+                android:text="恒源祥"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:textColor="@color/TextColorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/user_good"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/user_good_pic"
+                android:layout_toLeftOf="@+id/user_good"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_feedback_support_grey"
+                android:layout_centerVertical="true"
+                android:layout_width="12dp"
+                android:layout_height="12dp" />
+            <TextView
+                android:id="@+id/user_reply"
+                android:layout_toLeftOf="@+id/user_good_pic"
+                android:text="0"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@drawable/ic_feedback_grey"
+                android:layout_toLeftOf="@+id/user_reply"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_width="12dp"
+                android:layout_height="12dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/user_floor"
+                android:text="#10"
+                android:textSize="13sp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/user_create_time"
+                android:layout_marginLeft="30dp"
+                android:text="10小时前"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/user_msg"
+            android:layout_marginTop="5dp"
+            android:text="我是评论和哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+            android:textColor="@color/TextColorBlack"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/reply_container"
+            android:orientation="vertical"
+            android:background="@drawable/comment_reply"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/video_title"
+    android:singleLine="true"
+    android:textColor="@color/TextColorBlack"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/video_play_count"
+            android:text="12345"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/card_playcount_item_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/video_danma_count"
+            android:text="8888"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/card_danmacount_item_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/video_detail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/video_share_count"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#33cc66"
+                android:textSize="12sp"
+                android:background="@drawable/video_profile_count_bg_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <FrameLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/video_profile_count_bg"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/video_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView
+                android:text="分享"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/TextColorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/video_coin_count"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#FFD700"
+                android:textSize="12sp"
+                android:background="@drawable/video_profile_count_bg_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <FrameLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/video_profile_count_bg"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/video_coin"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+            </FrameLayout>
+            <TextView
+                android:text="投硬币"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/TextColorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/video_fav_count"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:background="@drawable/video_profile_count_bg_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <FrameLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/video_profile_count_bg"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/video_fav"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+            </FrameLayout>
+            <TextView
+                android:text="收藏"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/TextColorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <FrameLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/video_profile_count_bg"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp" />
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/video_cache"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+            </FrameLayout>
+            <TextView
+                android:text="缓存"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/TextColorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="20dp"
+        android:background="@color/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/author_avatar"
+            android:src="@drawable/bili_default_avatar"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+        <TextView
+            android:id="@+id/author_name"
+            android:textColor="@color/TextColorBlack"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/author_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/post_time"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/author_avatar"
+            android:layout_below="@id/author_name"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/like_author"
+            android:layout_alignParentRight="true"
+            android:text="+关注"
+            android:textColor="@color/colorAccent"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/register_button_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/episode_divider"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:background="@color/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/episode_title"
+        android:text="分集"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:textColor="@color/TextColorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <HorizontalScrollView
+        android:visibility="visible"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/episode_container"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+        </HorizontalScrollView>
+    <View
+        android:layout_marginTop="10dp"
+        android:background="@color/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:text="视频相关"
+        android:textColor="@color/TextColorBlack"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <org.apmem.tools.layouts.FlowLayout
+        android:id="@+id/tags_container"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        </org.apmem.tools.layouts.FlowLayout>
+</LinearLayout>

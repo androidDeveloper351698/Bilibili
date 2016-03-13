@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kaede.bilibilikaede.UI.SearchActivity">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/search_stroke"
+    android:layout_height="?attr/actionBarSize">
+    <ImageView
+        android:id="@+id/search_back"
+        android:src="@drawable/ic_arrow_back_black"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_width="16dp"
+        android:layout_height="16dp" />
+    <EditText
+        android:id="@+id/search_text"
+        android:hint="搜索视频、番剧、up主或av号"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:textSize="14sp"
+        android:background="@color/white"
+        android:layout_width="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <ImageView
+        android:id="@+id/search_search"
+        android:src="@drawable/ic_search_query"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+</LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_search"
+        app:tabIndicatorColor="@color/colorAccent"
+        android:background="@color/light_transparent"
+        app:tabTextColor="@color/TextColorBlack"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextAppearance="@style/MyTabTextAppearance"
+        android:elevation="2dp"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
