@@ -15,6 +15,7 @@ import java.util.Map;
 
 /**
  * Created by asus on 2016/1/24.
+ *
  */
 public class VideoDao {
     private VideoDatabaseOpenHelper instance;
@@ -98,7 +99,7 @@ public class VideoDao {
         ArrayList<VideoDetail> list = new ArrayList<>();
         SQLiteDatabase db = instance.getReadableDatabase();
 
-        StringBuffer sb = new StringBuffer("select * from ");
+        StringBuilder sb = new StringBuilder("select * from ");
         sb.append(getTableName(tableType));
         if(category != Constant.RE_MEN_TUI_JIAN){//热门推荐只需要从热门表中随机挑选出4条即可
             sb.append(" where category = ?");
@@ -165,7 +166,7 @@ public class VideoDao {
         ArrayList<VideoDetail> list = new ArrayList<>();
         SQLiteDatabase db = instance.getReadableDatabase();
 
-        StringBuffer sb = new StringBuffer("select * from ");
+        StringBuilder sb = new StringBuilder("select * from ");
         sb.append(getTableName(tableType));
         sb.append("where videoType = ?");
         if(flag == FLAG_RANDOM){

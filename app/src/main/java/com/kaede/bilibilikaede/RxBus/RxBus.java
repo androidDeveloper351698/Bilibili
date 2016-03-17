@@ -6,6 +6,7 @@ import rx.subjects.SerializedSubject;
 
 /**
  * Created by asus on 2016/2/3.
+ *
  */
 public class RxBus {
     private SerializedSubject<Object,Object> subject = new SerializedSubject<>(PublishSubject.create());

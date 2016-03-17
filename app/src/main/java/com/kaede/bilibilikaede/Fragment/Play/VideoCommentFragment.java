@@ -232,6 +232,7 @@ public class VideoCommentFragment extends BaseFragment {
                     ((CommentViewHolder) holder).userGood.setText(info.getGood());
                     ((CommentViewHolder) holder).userReply.setText(info.getReply_count());
                     ((CommentViewHolder) holder).userMsg.setText(info.getMsg());
+                    ((CommentViewHolder) holder).avatar.setImageResource(R.drawable.bili_default_avatar);
                     ((CommentViewHolder) holder).userCreateTime.setText(VideoUtils.getStringTimeDisplay(info.getCreate()));
                     int level = Integer.parseInt(info.getLevel_info().getCurrent_level());
                     switch (level){
@@ -276,7 +277,12 @@ public class VideoCommentFragment extends BaseFragment {
                         }
                     }
                     if (isIdle) {
-                        Picasso.with(getActivity()).load(info.getFace()).placeholder(R.drawable.bili_default_avatar).error(R.drawable.bili_default_avatar).into(((CommentViewHolder) holder).avatar);
+                        String[] split = info.getFace().split("/52_52");
+                        String url="";
+                        for(String s:split){
+                            url+= s.equals("/52_52")?"":s;
+                        }
+                        Picasso.with(getActivity()).load(url).placeholder(R.drawable.bili_default_avatar).error(R.drawable.bili_default_avatar).into(((CommentViewHolder) holder).avatar);
                     }
                 }
             }

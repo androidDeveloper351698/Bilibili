@@ -12,6 +12,7 @@ import rx.Observable;
 
 /**
  * Created by asus on 2016/1/24.
+ *
  */
 public interface APIService {
 
